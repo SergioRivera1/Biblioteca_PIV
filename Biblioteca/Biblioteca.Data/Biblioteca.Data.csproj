@@ -50,12 +50,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BibliotecaContext.cs" />
+    <Compile Include="Migrations\201610292046345_initialCreate.cs" />
+    <Compile Include="Migrations\201610292046345_initialCreate.Designer.cs">
+      <DependentUpon>201610292046345_initialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modelos\Editorial.cs" />
     <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610292046345_initialCreate.resx">
+      <DependentUpon>201610292046345_initialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
