@@ -15,8 +15,8 @@ namespace Blioteca.Consola
             using (var context = new BibliotecaContext("BibliotecaLocal"))
             {
                 var nuevoLibro = new Libro();
-                nuevoLibro.Nombre = "Quiero Pinga";
-                nuevoLibro.AnioPublicacion = 2012;
+                nuevoLibro.Nombre = "Libro Matematicas";
+                nuevoLibro.AnioPublicacion = 2002;
                 context.Libros.Add(nuevoLibro);
                 context.SaveChanges();
 

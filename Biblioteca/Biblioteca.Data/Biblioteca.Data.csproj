@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201610292046345_initialCreate.Designer.cs">
       <DependentUpon>201610292046345_initialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611051731454_actializando.cs" />
+    <Compile Include="Migrations\201611051731454_actializando.Designer.cs">
+      <DependentUpon>201611051731454_actializando.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelos\Editorial.cs" />
     <Compile Include="Modelos\Libro.cs" />
@@ -69,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610292046345_initialCreate.resx">
       <DependentUpon>201610292046345_initialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611051731454_actializando.resx">
+      <DependentUpon>201611051731454_actializando.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
